@@ -24,6 +24,15 @@ namespace Lab3Serie23
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.Configure<PizzaDatabaseSettings>(
+        Configuration.GetSection(nameof(PizzaDatabaseSettings)));
+
+            services.AddSingleton<IPizzasDatabaseSettings>(sp =>
+                sp.GetRequiredService<IOptions<PizzaDatabaseSettings>>().Value);
+
+            services.AddSingleton<PizzaService>();
+
             services.AddControllers();
         }
 
