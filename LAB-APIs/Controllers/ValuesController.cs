@@ -32,8 +32,20 @@ namespace LAB_APIs.Controllers
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post(string value, Estudiante elemento)
         {
+            var valueAux = value;
+            if (valueAux.Length < 32)
+            {
+                for (int i = 32; i > value.Length; i--)
+                {
+                    valueAux += ".";
+                }
+            }           
+            if (valueAux.Length > 32)
+            {
+                valueAux = valueAux.Substring(0, 32);
+            }
         }
 
         // PUT api/values/5
