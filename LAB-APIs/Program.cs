@@ -23,10 +23,10 @@ namespace LAB_APIs
     }
     public class Estudiante
     {
-        int carnet { get; set; }
-        string nombre { get; set; }
-        int edad { get; set; }
-        string carrera { get; set; }
+        public int carnet { get; set; }
+        public string nombre { get; set; }
+        public int edad { get; set; }
+        public string carrera { get; set; }
 
     }
     
