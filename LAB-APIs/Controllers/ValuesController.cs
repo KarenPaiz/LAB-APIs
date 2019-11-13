@@ -18,9 +18,9 @@ namespace LAB_APIs.Controllers
     {
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return Singleton.Datos.token;
         }
 
         // GET api/values/5
@@ -31,7 +31,7 @@ namespace LAB_APIs.Controllers
         }
 
         // POST api/values
-        [HttpPost]
+        [HttpPost("{value}")]
         public void Post(string value, Estudiante elemento)
         {
             var valueAux = value;
@@ -46,6 +46,20 @@ namespace LAB_APIs.Controllers
             {
                 valueAux = valueAux.Substring(0, 32);
             }
+
+            var password = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(valueAux));
+            var Credenciales = new SigningCredentials(password, SecurityAlgorithms.HmacSha256);
+            var peticiones = new Claim[4];//TAMANIO DE PROPIEDADES DE MI CLASE KAREN
+            peticiones[0] = new Claim("carnet", elemento.carnet.ToString());
+            peticiones[1] = new Claim("edad", elemento.edad.ToString());
+            peticiones[2] = new Claim("carrera", elemento.carrera);
+            peticiones[3] = new Claim("nombre", elemento.nombre);
+            var encabezado = new JwtHeader(Credenciales);
+            var cuerpo = new JwtPayload(peticiones);
+            var token = new JwtSecurityToken(encabezado, cuerpo);
+            //IdentityModelEventSource.showII = true;
+            var tokenstring = new JwtSecurityTokenHandler().WriteToken(token);
+            Singleton.Datos.token = tokenstring;
         }
 
         // PUT api/values/5
