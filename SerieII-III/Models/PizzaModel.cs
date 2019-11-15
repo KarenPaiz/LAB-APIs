@@ -9,12 +9,9 @@ namespace SerieII_III.Models
 {
     public class PizzaModel
     {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-
+      
         public string Id { get; set; }
 
-        [BsonElement("Name")]
         public string NombrePizza { get; set; }
 
         public string Descripcion { get; set; }

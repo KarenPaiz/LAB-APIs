@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using SerieII_III.Models;
-using SerieII_III.Services;
+//using SerieII_III.Services;
 
 namespace SerieII_III.Controllers
 {
@@ -9,21 +9,15 @@ namespace SerieII_III.Controllers
     [ApiController]
     public class PizzasController : ControllerBase
     {
-        private readonly PizzaService _pizzaService;
-
-        public PizzasController(PizzaService pizzaService)
-        {
-            _pizzaService = pizzaService;
-        }
-
+        
         [HttpGet]
         public ActionResult<List<PizzaModel>> Get() =>
-         _pizzaService.Get();
+         SIngleton.Instance.ListaPizzas.FindAll(PizzaModel => true);
 
-        [HttpGet("{id:length(24)}", Name = "GetPizza")]
+        [HttpGet("{id:length(2)}")]
         public ActionResult<PizzaModel> Get(string id)
         {
-            var pizza = _pizzaService.Get(id);
+            var pizza = SIngleton.Instance.ListaPizzas.Find(PizzaModel => PizzaModel.Id == id);
 
             if (pizza == null)
             {
@@ -36,36 +30,37 @@ namespace SerieII_III.Controllers
         [HttpPost]
         public ActionResult<PizzaModel> Create(PizzaModel Pizza)
         {
-            _pizzaService.Create(Pizza);
+            SIngleton.Instance.ListaPizzas.Add(Pizza);
 
-            return CreatedAtRoute("GetPizza", new { id = Pizza.Id.ToString() }, Pizza);
+            return Ok(Pizza);
         }
 
-        [HttpPut("{id:length(24)}")]
+        [HttpPut("{id:length(2)}")]
         public IActionResult Update(string id, PizzaModel NewPizza)
         {
-            var pizza = _pizzaService.Get(id);
+            var pizza = SIngleton.Instance.ListaPizzas.Find(PizzaModel => PizzaModel.Id == id);
             if (pizza == null)
             {
                 return NotFound();
             }
             NewPizza.Id = id;
-            _pizzaService.Update(id, NewPizza);
+            SIngleton.Instance.ListaPizzas.Remove(pizza);
+            SIngleton.Instance.ListaPizzas.Add(NewPizza);
 
             return Ok();
         }
 
-        [HttpDelete("{id:length(24)}")]
+        [HttpDelete("{id:length(2)}")]
         public IActionResult Delete(string id)
         {
-            var pizza = _pizzaService.Get(id);
+            var pizza = SIngleton.Instance.ListaPizzas.Find(PizzaModel => PizzaModel.Id == id);
 
             if (pizza == null)
             {
                 return NotFound();
             }
 
-            _pizzaService.Remove(pizza.Id);
+            SIngleton.Instance.ListaPizzas.Remove(pizza);
 
             return Ok();
         }
