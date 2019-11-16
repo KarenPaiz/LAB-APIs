@@ -1,0 +1,14 @@
+C:\Users\Karen\Desktop\LAB-APIs\LAB-APIs\bin\Debug\netcoreapp2.1\LAB-APIs.deps.json
+C:\Users\Karen\Desktop\LAB-APIs\LAB-APIs\bin\Debug\netcoreapp2.1\LAB-APIs.runtimeconfig.json
+C:\Users\Karen\Desktop\LAB-APIs\LAB-APIs\bin\Debug\netcoreapp2.1\LAB-APIs.runtimeconfig.dev.json
+C:\Users\Karen\Desktop\LAB-APIs\LAB-APIs\bin\Debug\netcoreapp2.1\LAB-APIs.dll
+C:\Users\Karen\Desktop\LAB-APIs\LAB-APIs\bin\Debug\netcoreapp2.1\LAB-APIs.pdb
+C:\Users\Karen\Desktop\LAB-APIs\LAB-APIs\obj\Debug\netcoreapp2.1\LAB-APIs.csprojAssemblyReference.cache
+C:\Users\Karen\Desktop\LAB-APIs\LAB-APIs\obj\Debug\netcoreapp2.1\LAB-APIs.csproj.CoreCompileInputs.cache
+C:\Users\Karen\Desktop\LAB-APIs\LAB-APIs\obj\Debug\netcoreapp2.1\LAB-APIs.RazorAssemblyInfo.cache
+C:\Users\Karen\Desktop\LAB-APIs\LAB-APIs\obj\Debug\netcoreapp2.1\LAB-APIs.RazorAssemblyInfo.cs
+C:\Users\Karen\Desktop\LAB-APIs\LAB-APIs\obj\Debug\netcoreapp2.1\LAB-APIs.AssemblyInfoInputs.cache
+C:\Users\Karen\Desktop\LAB-APIs\LAB-APIs\obj\Debug\netcoreapp2.1\LAB-APIs.AssemblyInfo.cs
+C:\Users\Karen\Desktop\LAB-APIs\LAB-APIs\obj\Debug\netcoreapp2.1\LAB-APIs.RazorTargetAssemblyInfo.cache
+C:\Users\Karen\Desktop\LAB-APIs\LAB-APIs\obj\Debug\netcoreapp2.1\LAB-APIs.dll
+C:\Users\Karen\Desktop\LAB-APIs\LAB-APIs\obj\Debug\netcoreapp2.1\LAB-APIs.pdb
