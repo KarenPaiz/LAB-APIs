@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Allan Dávila\\Documents\\LAB-APIs\\LAB-APIs\\LAB-APIs.csproj": {}
+    "C:\\Users\\Allan Dávila\\Desktop\\LAB-APIs\\LAB-APIs\\LAB-APIs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Allan Dávila\\Documents\\LAB-APIs\\LAB-APIs\\LAB-APIs.csproj": {
+    "C:\\Users\\Allan Dávila\\Desktop\\LAB-APIs\\LAB-APIs\\LAB-APIs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Allan Dávila\\Documents\\LAB-APIs\\LAB-APIs\\LAB-APIs.csproj",
+        "projectUniqueName": "C:\\Users\\Allan Dávila\\Desktop\\LAB-APIs\\LAB-APIs\\LAB-APIs.csproj",
         "projectName": "LAB-APIs",
-        "projectPath": "C:\\Users\\Allan Dávila\\Documents\\LAB-APIs\\LAB-APIs\\LAB-APIs.csproj",
+        "projectPath": "C:\\Users\\Allan Dávila\\Desktop\\LAB-APIs\\LAB-APIs\\LAB-APIs.csproj",
         "packagesPath": "C:\\Users\\Allan Dávila\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Allan Dávila\\Documents\\LAB-APIs\\LAB-APIs\\obj\\",
+        "outputPath": "C:\\Users\\Allan Dávila\\Desktop\\LAB-APIs\\LAB-APIs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Allan Dávila\\AppData\\Roaming\\NuGet\\NuGet.Config",

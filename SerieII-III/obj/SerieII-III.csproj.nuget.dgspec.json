@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Allan Dávila\\Documents\\LAB-APIs\\SerieII-III\\SerieII-III.csproj": {}
+    "C:\\Users\\Allan Dávila\\Desktop\\LAB-APIs\\SerieII-III\\SerieII-III.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Allan Dávila\\Documents\\LAB-APIs\\SerieII-III\\SerieII-III.csproj": {
+    "C:\\Users\\Allan Dávila\\Desktop\\LAB-APIs\\SerieII-III\\SerieII-III.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Allan Dávila\\Documents\\LAB-APIs\\SerieII-III\\SerieII-III.csproj",
+        "projectUniqueName": "C:\\Users\\Allan Dávila\\Desktop\\LAB-APIs\\SerieII-III\\SerieII-III.csproj",
         "projectName": "SerieII-III",
-        "projectPath": "C:\\Users\\Allan Dávila\\Documents\\LAB-APIs\\SerieII-III\\SerieII-III.csproj",
+        "projectPath": "C:\\Users\\Allan Dávila\\Desktop\\LAB-APIs\\SerieII-III\\SerieII-III.csproj",
         "packagesPath": "C:\\Users\\Allan Dávila\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Allan Dávila\\Documents\\LAB-APIs\\SerieII-III\\obj\\",
+        "outputPath": "C:\\Users\\Allan Dávila\\Desktop\\LAB-APIs\\SerieII-III\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Allan Dávila\\AppData\\Roaming\\NuGet\\NuGet.Config",
