@@ -14,7 +14,7 @@ namespace SerieII_III.Controllers
         public ActionResult<List<PizzaModel>> Get() =>
          SIngleton.Instance.ListaPizzas.FindAll(PizzaModel => true);
 
-        [HttpGet("{id:length(2)}")]
+        [HttpGet("{id}")]
         public ActionResult<PizzaModel> Get(string id)
         {
             var pizza = SIngleton.Instance.ListaPizzas.Find(PizzaModel => PizzaModel.Id == id);
@@ -35,7 +35,7 @@ namespace SerieII_III.Controllers
             return Ok(Pizza);
         }
 
-        [HttpPut("{id:length(2)}")]
+        [HttpPut("{id:}")]
         public IActionResult Update(string id, PizzaModel NewPizza)
         {
             var pizza = SIngleton.Instance.ListaPizzas.Find(PizzaModel => PizzaModel.Id == id);
@@ -50,7 +50,7 @@ namespace SerieII_III.Controllers
             return Ok();
         }
 
-        [HttpDelete("{id:length(2)}")]
+        [HttpDelete("{id}")]
         public IActionResult Delete(string id)
         {
             var pizza = SIngleton.Instance.ListaPizzas.Find(PizzaModel => PizzaModel.Id == id);
